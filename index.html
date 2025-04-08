@@ -1,18 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>5G-mMTC-LAB Repositories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1500px;
+      margin: auto auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+
+      td:nth-of-type(1)::before { content: "Component"; }
+      td:nth-of-type(2)::before { content: "Description"; }
+      td:nth-of-type(3)::before { content: "Repository"; }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>5G-mMTC-LAB: github repositories of the platform</h1>
-    <ul>
-      <li>https://github.com/5g-mmtc-tribe/Experiment-manager</li>
-      <li>https://github.com/5g-mmtc-tribe/system-manager</li>
-      <li>...</li>
-    </ul>
+    <h1>5G-mMTC-LAB GitHub Repositories</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Description</th>
+          <th>Repository</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Experiment Manager</td>
+          <td>Coordinates and manages experiment lifecycles within the 5G-mMTC platform.</td>
+          <td><a href="https://github.com/5g-mmtc-tribe/Experiment-manager" target="_blank">View Repo</a></td>
+        </tr>
+        <tr>
+          <td>System Manager</td>
+          <td>Handles orchestration and control of system-level resources.</td>
+          <td><a href="https://github.com/5g-mmtc-tribe/system-manager" target="_blank">View Repo</a></td>
+        </tr>
+        <tr>
+          <td>Testbed Web Portal</td>
+          <td>Provides a web-based interface to monitor and interact with the 5G testbed.</td>
+          <td><a href="https://github.com/5g-mmtc-tribe/5g-testbed-webportal" target="_blank">View Repo</a></td>
+        </tr>
+        <tr>
+          <td>5gmmtclab-dev</td>
+          <td>Contains development resources for the 5GMmTC-LAB environment.</td>
+          <td><a href="https://github.com/5g-mmtc-tribe/5gmmtclab-dev" target="_blank">View Repo</a></td>
+        </tr>
+
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
